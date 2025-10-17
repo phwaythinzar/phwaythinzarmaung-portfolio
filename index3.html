@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My CV</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #f7f9fc;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    header {
+      text-align: center;
+      border-bottom: 2px solid #00bcd4;
+      padding-bottom: 20px;
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #00796b;
+    }
+
+    h3 {
+      margin: 5px 0 15px;
+      font-weight: normal;
+      color: #555;
+    }
+
+    section {
+      margin: 25px 0;
+    }
+
+    h2 {
+      color: #00bcd4;
+      border-left: 5px solid #00bcd4;
+      padding-left: 10px;
+      font-size: 20px;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    /* 🌙 Dark Mode Styles */
+    body.dark {
+      background: #121212;
+      color: #f0f0f0;
+    }
+    body.dark .container {
+      background: #1e1e1e;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    }
+    body.dark h1, body.dark h2 {
+      color: #80deea;
+    }
+
+    .toggle-btn {
+      display: block;
+      margin: 10px auto;
+      padding: 8px 20px;
+      border: none;
+      border-radius: 25px;
+      background: #00bcd4;
+      color: white;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .toggle-btn:hover {
+      background: #0097a7;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="profile.jpg" alt="Profile Photo" class="profile-img">
+      <h1>Phway Thinzar Maung</h1>
+      <h3>Electronics Engineer</h3>
+      <button class="toggle-btn" onclick="toggleDarkMode()">🌙 Toggle Dark Mode</button>
+    </header>
+
+    <section class="contact">
+      <h2>Contact Info</h2>
+      <p>Email: <a href="mailto:thinzarmaung1931@gmail.com">thinzarmaung1931@gmail.com</a></p>
+      <p>Phone: +95 9 777120419</p>
+      <p>Address: Chauk, Myanmar</p>
+    </section>
+
+    <section class="education">
+      <h2>Education</h2>
+      <p><strong>B.E (Electronics Engineering)</strong> – Panglong Technological University (2025)</p>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Arduino & IoT Projects</li>
+        <li>HTML, CSS, JavaScript</li>
+        <li>English,Japanese</li>
+      </ul>
+    </section>
+
+    <section class="experience">
+      <h2>Experience</h2>
+      <p>Intern at MPT Telecom</p>
+    </section>
+
+    <footer>
+      <p>© 2025 Phway Phway | Designed with ❤️ using HTML, CSS & JS</p>
+    </footer>
+  </div>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+</body>
+</html>
